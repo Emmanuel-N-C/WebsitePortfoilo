@@ -1,0 +1,200 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ===== Navigation ===== */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #4cafef;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  padding: 3rem 1rem;
+  background: #323d44;
+  color: white;
+}
+
+/* Hero container with photo + text */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* ===== Projects Section ===== */
+.project-list {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.8rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.project-title:hover {
+  color: #4cafef;
+}
+
+.project-details {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-details a {
+  color: #4cafef;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  /* Grid layout for projects */
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .project {
+    margin: 0;
+  }
+
+  /* Hero side-by-side layout */
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+/* ===== Skills Section ===== */
+#skills {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills-container i {
+  font-size: 3rem;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.skills-container i:hover {
+  transform: scale(1.2);
+}
+/* Hide projects initially */
+.hidden {
+  display: none;
+}
+
+/* Button style */
+.btn {
+  background: #4cafef;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1976d2;
+}
+
+

@@ -7,7 +7,8 @@
   --accent-color: #4cafef;
   --card-bg: #fff;
   --footer-bg: #222;
-  --project-title-color: #333;  
+  --project-title-color: #333;
+  --hero-bg: #2c3e50;   
 }
 
 body.dark-mode {
@@ -18,8 +19,10 @@ body.dark-mode {
   --accent-color: #90caf9;
   --card-bg: #1f1f1f;
   --footer-bg: #1e1e1e;
-  --project-title-color: #fff;  
+  --project-title-color: #fff;
+  --hero-bg: #0d2538;   
 }
+
 
 
 /* ===== Global Styles ===== */
@@ -72,7 +75,7 @@ nav ul li a:hover {
 /* ===== Hero Section ===== */
 #hero {
   padding: 3rem 1rem;
-  background: #2c3e50;
+  background: var(--hero-bg);
   color: white;
 
 }

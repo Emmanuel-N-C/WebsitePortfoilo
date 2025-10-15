@@ -9,3 +9,26 @@ main {
   padding-top: 70px; /* navbar height offset */
 }
 
+/* Light mode defaults */
+.app.light-mode {
+  --background: #ffffff;
+  --text: #111827;
+  --primary: #2563eb;
+  --secondary: #f3f4f6;
+}
+
+/* Dark mode theme variables */
+.app.dark-mode {
+  --background: #0a0f1f;
+  --text: #e5e7eb;
+  --primary: #60a5fa;
+  --secondary: #1f2937;
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
+}
+
+section {
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+}

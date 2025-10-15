@@ -1,67 +1,108 @@
 .skills-section {
-  padding: 80px 5%;
-  background: var(--background);
-  color: var(--text);
   min-height: 100vh;
-  transition: background 0.3s ease, color 0.3s ease;
+  padding: 80px 10%;
+  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff);
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-container {
-  max-width: 1000px;
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
 .skills-container h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
 }
 
 .subtitle {
-  color: gray;
-  margin-bottom: 2rem;
+  color: #4b5563;
+  font-size: 1.05rem;
+  margin: 10px 0 40px;
 }
 
+/* Grid layout */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
 }
 
-.skill-bar {
-  margin-bottom: 1.2rem;
+.card-header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.header-icon {
+  font-size: 1.3rem;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #111827;
+  margin-bottom: 5px;
+  gap: 8px;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-name {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+  flex-grow: 1;
 }
 
-.skill-progress {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  height: 10px;
+.skill-percent {
+  font-weight: 600;
+  color: #374151;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  border-radius: 6px;
+  height: 6px;
   overflow: hidden;
 }
 
 .progress-fill {
-  background: var(--primary);
-  height: 10px;
-  border-radius: 5px;
+  height: 100%;
+  border-radius: 6px;
 }
 
-.skill-percent {
-  font-size: 0.85rem;
-  color: gray;
-  text-align: right;
-  margin-top: 0.2rem;
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }

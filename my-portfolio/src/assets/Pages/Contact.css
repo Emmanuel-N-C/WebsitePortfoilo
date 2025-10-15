@@ -1,0 +1,107 @@
+.contact-section {
+  padding: 80px 5%;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-icons a {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #0056b3;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.send-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #0056b3;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 1rem;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 1rem;
+}

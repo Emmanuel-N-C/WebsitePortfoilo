@@ -1,0 +1,92 @@
+.projects-section {
+  padding: 80px 5%;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.projects-container h2 {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-align: left;
+  color: var(--primary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  margin-bottom: 1rem;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: rgba(0, 123, 255, 0.1);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin: 3px;
+  font-size: 0.8rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.github-link:hover {
+  color: #0056b3;
+}

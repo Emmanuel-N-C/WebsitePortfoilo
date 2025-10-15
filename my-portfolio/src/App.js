@@ -63,7 +63,15 @@ function App() {
         <Contact />
       </section>
 
-      <Footer />
+      <Footer
+        onScrollToSection={{
+          home: () => scrollToSection(homeRef),
+          about: () => scrollToSection(aboutRef),
+          projects: () => scrollToSection(projectsRef),
+          skills: () => scrollToSection(skillsRef),
+          contact: () => scrollToSection(contactRef),
+        }}
+      />
       <ScrollToTopButton />
     </div>
   );

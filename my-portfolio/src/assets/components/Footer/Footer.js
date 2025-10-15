@@ -1,15 +1,16 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
 
-function Footer() {
-  const navigate = useNavigate();
-
-  // Function to navigate to Contact page with pre-filled subject
+function Footer({ onScrollToSection }) {
+  // Function to scroll to contact section and prefill subject
   const handleServiceClick = (service) => {
-    navigate("/contact", { state: { subject: `Inquiry about ${service}` } });
-    window.scrollTo(0, 0);
+    if (onScrollToSection?.contact) {
+      onScrollToSection.contact(); // Smooth scroll to contact section
+    }
+
+    // Optionally, you could trigger a subject field fill via global state or EmailJS template logic
+    console.log(`Inquiry about ${service}`);
   };
 
   return (
@@ -34,7 +35,7 @@ function Footer() {
               <FaGithub />
             </a>
             <a
-              href="www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5"
+              href="https://www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,11 +51,11 @@ function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li onClick={onScrollToSection?.home}>Home</li>
+            <li onClick={onScrollToSection?.about}>About</li>
+            <li onClick={onScrollToSection?.projects}>Projects</li>
+            <li onClick={onScrollToSection?.skills}>Skills</li>
+            <li onClick={onScrollToSection?.contact}>Contact</li>
           </ul>
         </div>
 
@@ -84,43 +85,36 @@ function Footer() {
         </div>
 
         {/* CONTACT SECTION */}
-<div className="footer-contact">
-  <h4>Contact</h4>
-
-  
-
-  <p>
-    <a href="mailto:nwangangachinedu@gmail.com">
-      nwangangachinedu@gmail.com
-    </a>
-  </p>
-
-  <p>
-    <a
-      href="https://github.com/Emmanuel-N-C"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      github.com/Emmanuel-N-C
-    </a>
-  </p>
-
-  <p>
-    <a
-      href="https://www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      linkedin.com/in/emmanuel-nwanganga-4940ab2a5
-    </a>
-  </p>
-</div>
-
+        <div className="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:nwangangachinedu@gmail.com">
+              nwangangachinedu@gmail.com
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/Emmanuel-N-C"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/Emmanuel-N-C
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/emmanuel-nwanganga-4940ab2a5
+            </a>
+          </p>
+        </div>
       </div>
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Nwanganga Emmanuel. All rights reserved.</p>
-        <p>Made with <span className="heart">❤</span> in Switzerland.</p>
       </div>
     </footer>
   );

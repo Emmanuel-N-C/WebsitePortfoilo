@@ -1,72 +1,163 @@
 .about-section {
-  padding: 80px 5%;
-  background: var(--background);
-  color: var(--text);
-  min-height: 90vh;
-  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle moving pattern */
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(37, 99, 235, 0.03),
+    rgba(37, 99, 235, 0.03) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  animation: bgMove 25s linear infinite;
+}
+@keyframes bgMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 40px;
+  }
 }
 
 .about-container {
-  max-width: 900px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-header {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.about-container h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+.about-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
 }
 
-.subtitle {
-  color: gray;
-  margin-bottom: 2rem;
+.about-header p {
+  color: #4b5563;
+  margin-top: 10px;
+  font-size: 1.05rem;
 }
 
-.tabs {
+.about-content {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
-.tabs button {
+/* Personal Info */
+.about-info-card {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+}
+
+.about-info-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.about-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-info-card li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Tabs */
+.about-tabs {
+  flex: 2;
+  min-width: 400px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
   background: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  font-weight: 500;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 8px 20px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.tabs button.active {
-  background: var(--primary);
-  color: #fff;
+.tab-buttons button.active {
+  background: #2563eb;
+  color: white;
 }
 
-.tabs button:hover {
-  background: var(--primary);
-  color: #fff;
+.tab-buttons button:hover {
+  background: #2563eb;
+  color: white;
 }
 
 .tab-content {
-  text-align: left;
-  max-width: 700px;
-  margin: 0 auto;
+  color: #374151;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
-.tab-content h3 {
-  margin-bottom: 1rem;
+.tab-content h3,
+.tab-content h4 {
+  color: #1e3a8a;
+  margin-top: 15px;
 }
 
 .tab-content ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .tab-content li {
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-tabs,
+  .about-info-card {
+    width: 100%;
+  }
 }

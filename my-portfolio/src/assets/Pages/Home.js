@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Home.css";
-import profilePic from "../../assets/images/myPhoto.jpeg"; // your photo path
+import profilePic from "../../assets/images/myPhoto.jpeg"; 
 
 function Home({ onScrollToSection }) {
   const titles = [

@@ -1,23 +1,69 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Nwanganga Emmanuel – Personal Portfolio Website
 
-This repository contains the source code for my personal portfolio website.  
-The portfolio is designed to showcase my projects, skills, and experience in web development and related fields.  
+Welcome to the source code of my **personal portfolio website** — a modern, responsive, and interactive single-page application built to showcase my work, technical skills, and professional background as a **Full-Stack Software Engineer & Software Test Engineer**.
+
+---
 
 ## 🚀 Features
-- Responsive design for desktop and mobile devices  
-- Clean and modern UI layout  
-- Sections for:
-  - About Me  
-  - Projects  
-  - Contact Information  
+
+✅ **Fully Responsive Design** – Optimized for desktop, tablet, and mobile devices  
+✅ **Smooth Scroll Navigation** – Seamless transitions between sections  
+✅ **Active Navbar Highlighting** – Automatically highlights the section currently in view  
+✅ **Dynamic Contact Form** – EmailJS integration for direct messaging  
+✅ **Clean & Modern UI** – Inspired by professional portfolio layouts  
+✅ **Reusable Components** – Structured React components for scalability  
+✅ **Scroll-to-Top Button** – Quick access back to the top of the page  
+✅ **Downloadable Resume** – Instant access to my professional CV  
+
+---
+
+## 🧩 Sections
+
+- 🏠 **Home** – Introduction, professional summary, and hero section  
+- 👤 **About** – Background, education, certifications, and experience  
+- 💻 **Projects** – Featured software engineering and QA automation projects  
+- 🧠 **Skills** – Technical proficiencies with categorized visualization  
+- ✉️ **Contact** – Direct email form with working integration  
+
+---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Deployment:** GitHub Pages (planned)  
 
-## 📌 Future Improvements
-- Add more detailed project showcases  
-- Improve design with animations and interactivity  
-- Integrate a blog or updates section  
-- Enhance accessibility and SEO  
-- More features and info will be added soon! 🚧  
+**Frontend:**  
+- React.js  
+- HTML5, CSS3  
+- Framer Motion (animations)  
+- React-Icons  
+
+**Email Integration:**  
+- EmailJS  
+
+**State Management:**  
+- Redux Toolkit  
+
+**Deployment:**  
+- GitHub Pages / Netlify / Vercel (planned)  
+
+---
+
+## 💡 Future Improvements
+
+- 🌙 Dark / Light Mode Toggle  
+- 🧬 Background Animation (Matrix Effect)  
+- 🧩 Improved accessibility & SEO  
+- 📝 Integrated blog or portfolio updates section  
+- 📸 Add project screenshots and live demo links  
+
+---
+
+## 📬 Contact
+
+📧 **Email:** [nwangangaemmanuel2@gmail.com](mailto:nwangangaemmanuel2@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/emmanuel-nwanganga-4940ab2a5](https://www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5)  
+💻 **GitHub:** [github.com/Emmanuel-N-C](https://github.com/Emmanuel-N-C)
+
+---
+
+## 🧾 License
+
+This project is open source and available under the [MIT License](LICENSE).

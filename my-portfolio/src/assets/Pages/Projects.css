@@ -144,3 +144,32 @@
     text-align: center;
   }
 }
+/* 🌙 Dark Mode Styling */
+.app.dark-mode .projects-section {
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
+}
+
+.app.dark-mode .project-card {
+  background: var(--card-bg);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+.app.dark-mode .project-content h3 {
+  color: var(--primary);
+}
+
+.app.dark-mode .project-content p {
+  color: var(--text);
+}
+
+.app.dark-mode .tech-stack span {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.app.dark-mode .github-link {
+  color: var(--primary);
+}

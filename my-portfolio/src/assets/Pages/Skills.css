@@ -106,3 +106,30 @@
     grid-template-columns: 1fr;
   }
 }
+/* 🌙 Dark Mode Styling */
+.app.dark-mode .skills-section {
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
+}
+
+.app.dark-mode .skill-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.app.dark-mode .skill-info {
+  color: var(--text);
+}
+
+.app.dark-mode .progress-bar {
+  background: #1e293b;
+}
+
+.app.dark-mode .progress-fill {
+  background: var(--primary);
+}
+
+.app.dark-mode .skills-container h1 {
+  color: var(--primary);
+}

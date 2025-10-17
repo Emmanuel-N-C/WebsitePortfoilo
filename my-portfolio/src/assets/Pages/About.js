@@ -45,7 +45,7 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3>🎓 Education</h3>
+            <h3>Education</h3>
             <ul>
               <li>
                 <strong>BSc in Computer Science Engineering (Software Technology)</strong>
@@ -55,7 +55,7 @@ function About() {
               </li>
             </ul>
 
-            <h3>💻 Technical Certifications</h3>
+            <h3>Technical Certifications</h3>
             <ul>
               <li>
                 <strong>ISTQB Certified Tester Foundation Level (CTFL)</strong>
@@ -98,70 +98,52 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h4>🧪 Software Testing Experience</h4>
+                        <h4>Software Testing Experience</h4>
             <ul>
               <li>
                 <strong>Software Test Engineer — DSS Consulting</strong>
                 <br />
-                <em>Budapest, Hungary | 09/2023 – 04/2025</em>
+                <em>Budapest, Hungary | 2023 – 2025</em>
                 <br />
-                Designed and executed functional, integration, and regression tests
-                for safety-critical software components. Built and maintained
-                automation frameworks using Selenium, Python/Java, TestNG, and
-                Ranorex, improving regression coverage by 25%.
-                <br />
-                Reviewed and validated Software Requirements Specifications (SRS),
-                ensuring complete test traceability and compliance. Performed system
-                and Factory Acceptance Tests (FAT), supported defect root cause
-                analysis, and contributed to test reporting via Allure and Xray.
-                <br />
-                Actively participated in continuous improvement initiatives
-                enhancing test coverage for safety-critical, real-time systems.
+                During my time at DSS Consulting, I led end-to-end QA for diverse client applications, 
+                including e-commerce, finance, and mobile platforms. 
+                My role combined manual, automated, exploratory, and automated testing under tight deadlines, 
+                ensuring high-quality deliverables across multiple environments.
               </li>
               <li>
                 <strong>Functional Tester (Intern) — ProofIT</strong>
                 <br />
-                <em>Budapest, Hungary | 08/2022 – 01/2023</em>
+                <em>Budapest, Hungary | 2022 – 2023</em>
                 <br />
-                Performed functional, exploratory, and integration testing on web,
-                mobile, and Linux desktop applications. Conducted cross-platform
-                regression cycles and collaborated with developers and testers in
-                Agile sprints using Jira.
-                <br />
-                Prepared and executed automated test scripts with Selenium and JUnit,
-                maintaining regression suites and improving test efficiency.
+                During my internship, 
+                I contributed to the verification and validation of web and mobile applications across various industries, 
+                ensuring quality, reliability, and usability before release. 
+                My role involved manual, exploratory, and automated testing to detect defects early and deliver actionable insights to developers.
               </li>
             </ul>
 
-            <h4>💻 Software Engineering Experience</h4>
+            <h4>Software Engineering Experience</h4>
             <ul>
               <li>
                 <strong>Full-Stack Software Engineer — Africsmart International Ltd</strong>
                 <br />
                 <em>Remote | 2021 – 2022</em>
                 <br />
-                Designed, developed, and maintained scalable web applications using
-                Java, Spring Boot, React, and RESTful APIs. Integrated frontend and
-                backend systems to deliver performant, user-friendly digital
-                solutions. Implemented authentication, database models, and responsive
-                UI components to improve business efficiency.
-                <br />
-                Collaborated remotely with cross-functional teams, performed code
-                reviews, and contributed to continuous delivery through CI/CD
-                pipelines.
+                Designed and developed scalable web applications using Java,
+                Spring Boot, and React. Implemented REST APIs, authentication, and
+                responsive UIs to improve business process efficiency.
               </li>
               <li>
                 <strong>Front-End Web Developer (Freelance)</strong>
                 <br />
                 <em>Remote | Ongoing</em>
                 <br />
-                Developed and customized responsive websites and single-page
-                applications using HTML, CSS, JavaScript, and React. Focused on
-                crafting clean user interfaces, optimizing performance, and ensuring
-                accessibility. Worked with clients to translate design concepts into
-                functional, visually engaging web experiences.
+                Build and maintain responsive websites and web apps using React,
+                HTML, CSS, and JavaScript. Focused on clean UI design, performance
+                optimization, and accessibility.
               </li>
             </ul>
+
           </motion.div>
         );
 

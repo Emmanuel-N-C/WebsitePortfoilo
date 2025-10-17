@@ -161,3 +161,38 @@
     width: 100%;
   }
 }
+/* 🌙 Dark Mode Styling */
+.app.dark-mode .about-section {
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
+}
+
+.app.dark-mode .about-info-card,
+.app.dark-mode .about-tabs {
+  background: var(--card-bg);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+.app.dark-mode .about-info-card h3,
+.app.dark-mode .tab-content h3,
+.app.dark-mode .tab-content h4 {
+  color: var(--primary);
+}
+
+.app.dark-mode .about-info-card li,
+.app.dark-mode .tab-content {
+  color: var(--text);
+}
+
+.app.dark-mode .tab-buttons button {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.app.dark-mode .tab-buttons button.active,
+.app.dark-mode .tab-buttons button:hover {
+  background: var(--primary);
+  color: white;
+}
+

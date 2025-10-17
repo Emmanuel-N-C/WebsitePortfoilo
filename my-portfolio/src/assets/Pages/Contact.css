@@ -162,3 +162,52 @@ textarea {
     justify-content: center;
   }
 }
+/* 🌙 Dark Mode Styling */
+.app.dark-mode .contact-section {
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
+}
+
+.app.dark-mode .contact-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.app.dark-mode .contact-container h1 {
+  color: var(--primary);
+}
+
+.app.dark-mode .subtitle {
+  color: var(--muted-text);
+}
+
+.app.dark-mode .contact-info h3 {
+  color: var(--primary);
+}
+
+.app.dark-mode .contact-info p {
+  color: var(--text);
+}
+
+.app.dark-mode input,
+.app.dark-mode textarea {
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+
+.app.dark-mode input:focus,
+.app.dark-mode textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+.app.dark-mode .send-btn {
+  background: var(--primary);
+}
+
+.app.dark-mode .send-btn:hover {
+  background: var(--primary-hover);
+}
+

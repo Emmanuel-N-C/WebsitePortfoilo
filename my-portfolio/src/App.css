@@ -1,34 +1,21 @@
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.code-rain-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: transparent;
+  pointer-events: none;
 }
 
-main {
-  flex: 1;
-  padding-top: 70px; /* navbar height offset */
-}
-
-/* Light mode defaults */
-.app.light-mode {
-  --background: #ffffff;
-  --text: #111827;
-  --primary: #2563eb;
-  --secondary: #f3f4f6;
-}
-
-/* Dark mode theme variables */
-.app.dark-mode {
-  --background: #0a0f1f;
-  --text: #e5e7eb;
-  --primary: #60a5fa;
-  --secondary: #1f2937;
-  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
-  color: var(--text);
-}
-
-section {
-  background: var(--background);
-  color: var(--text);
-  transition: background 0.4s ease, color 0.4s ease;
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }

@@ -35,8 +35,14 @@ function Home({ onScrollToSection }) {
           <h2 className="animated-role">{titles[currentTitle]}</h2>
 
           <p className="description">
-            Transforming ideas into elegant, high-performing solutions with a
-            strong focus on scalability, quality, and user experience.
+
+              I’m a Full-Stack Software Engineer and an ISTQB certified Software Test Engineer
+              passionate about building responsive, high-performance web
+              applications and ensuring end-to-end software quality. Proficient in
+              Java, JavaScript, React, and modern databases, I develop scalable
+              solutions backed by clean, testable code.<br /><br />
+              Transforming ideas into elegant, high-performing solutions with a
+              strong focus on scalability, quality, and user experience.
           </p>
 
           {/* Buttons */}

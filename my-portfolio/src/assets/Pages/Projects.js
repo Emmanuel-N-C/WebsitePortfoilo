@@ -99,17 +99,17 @@ function Projects() {
       >
         <h1>Featured Projects</h1>
         <p className="subtitle">
-          A showcase of my most impactful software engineering and testing work.
+          A showcase of some of my software engineering and testing work.
         </p>
 
-        <h2>💻 Software Engineering Projects</h2>
+        <h2>Software Engineering Projects</h2>
         <div className="projects-grid">
           {softwareProjects.map((project, index) =>
             renderProjectCard(project, index)
           )}
         </div>
 
-        <h2>🧪 Software Testing Projects</h2>
+        <h2>Software Testing Projects</h2>
         <div className="projects-grid">
           {testingProjects.map((project, index) =>
             renderProjectCard(project, index)

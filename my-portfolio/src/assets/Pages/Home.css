@@ -1,12 +1,19 @@
 .home-section {
-  height: 100vh; /* Fill entire screen */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff);
+  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff); /* matches About */
   overflow: hidden;
   position: relative;
   padding: 0 8%;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* 🌙 Dark Mode Background Matching Other Sections */
+.app.dark-mode .home-section {
+  background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
+  color: var(--text);
 }
 
 .home-container {
@@ -20,14 +27,11 @@
   z-index: 2;
 }
 
-/* Animated background lines */
+/* Subtle animated grid lines — consistent with About section */
 .home-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: repeating-linear-gradient(
     0deg,
     rgba(37, 99, 235, 0.03),
@@ -35,7 +39,9 @@
     transparent 1px,
     transparent 40px
   );
-  animation: moveBg 12s linear infinite;
+  animation: moveBg 25s linear infinite;
+  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes moveBg {
@@ -47,14 +53,9 @@
   }
 }
 
-/* Left Text */
-.home-text {
-  flex: 1;
-  min-width: 300px;
-}
-
+/* Text */
 .intro {
-  color: #2563eb;
+  color: var(--primary);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 10px;
@@ -63,14 +64,14 @@
 .name {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--text);
   margin-bottom: 10px;
 }
 
 .animated-role {
   font-size: 1.3rem;
   font-weight: 500;
-  background: linear-gradient(90deg, #2563eb, #f97316);
+  background: linear-gradient(90deg, var(--primary), #f97316);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
@@ -78,22 +79,27 @@
 }
 
 .description {
-  color: #4b5563;
+  color: var(--muted-text);
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 30px;
   max-width: 550px;
 }
 
+/* Pure white text for better readability in dark mode */
+.app.dark-mode .description {
+  color: #ffffff;
+}
+
+/* Buttons */
 .home-buttons {
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
 }
 
-/* Buttons */
 .btn-primary {
-  background-color: #2563eb;
+  background-color: var(--primary);
   color: white;
   border: none;
   padding: 12px 25px;
@@ -103,13 +109,13 @@
 }
 
 .btn-primary:hover {
-  background-color: #1e40af;
+  background-color: var(--primary-hover);
 }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #2563eb;
-  color: #2563eb;
+  border: 2px solid var(--primary);
+  color: var(--primary);
   padding: 10px 25px;
   border-radius: 6px;
   cursor: pointer;
@@ -117,7 +123,7 @@
 }
 
 .btn-outline:hover {
-  background-color: #2563eb;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -130,16 +136,23 @@
 
 .home-socials a {
   font-size: 1.4rem;
-  color: #1e3a8a;
+  color: var(--text);
   transition: 0.3s;
 }
 
 .home-socials a:hover {
-  color: #2563eb;
+  color: var(--primary);
   transform: translateY(-3px);
 }
 
-/* Right Image */
+/* ✨ Soft glow for dark mode */
+.app.dark-mode .home-socials a,
+.app.dark-mode .intro,
+.app.dark-mode .description {
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+}
+
+/* Profile Image */
 .home-image {
   flex: 1;
   display: flex;
@@ -151,7 +164,7 @@
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 4px solid #3b82f6;
+  border: 4px solid var(--primary);
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }

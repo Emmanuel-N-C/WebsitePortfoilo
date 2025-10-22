@@ -3,19 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff); /* matches About */
+  background: radial-gradient(circle at 20% 20%, #f1f5ff, #ffffff);
   overflow: hidden;
   position: relative;
   padding: 0 8%;
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* 🌙 Dark Mode Background Matching Other Sections */
+/* 🌙 Dark Mode */
 .app.dark-mode .home-section {
   background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
   color: var(--text);
 }
 
+/* Layout */
 .home-container {
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@
   z-index: 2;
 }
 
-/* Subtle animated grid lines — consistent with About section */
+/* Animated grid background */
 .home-section::before {
   content: "";
   position: absolute;
@@ -86,7 +87,7 @@
   max-width: 550px;
 }
 
-/* Pure white text for better readability in dark mode */
+/* Dark mode text */
 .app.dark-mode .description {
   color: #ffffff;
 }
@@ -145,7 +146,7 @@
   transform: translateY(-3px);
 }
 
-/* ✨ Soft glow for dark mode */
+/* Dark Mode Glow */
 .app.dark-mode .home-socials a,
 .app.dark-mode .intro,
 .app.dark-mode .description {
@@ -169,18 +170,66 @@
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }
 
-/* Responsive */
+/* 📱 Responsive */
 @media (max-width: 900px) {
+  .home-section {
+    height: auto;
+    padding: 100px 5% 60px;
+  }
+
   .home-container {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 1.5rem;
+  }
+
+  .home-image img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .animated-role {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: 0 auto 25px;
+    max-width: 90%;
   }
 
   .home-buttons {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .home-socials {
     justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .animated-role {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }

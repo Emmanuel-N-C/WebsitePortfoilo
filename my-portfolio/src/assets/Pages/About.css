@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-/* Subtle moving pattern */
+/* Background animation */
 .about-section::before {
   content: "";
   position: absolute;
@@ -23,6 +23,7 @@
   );
   animation: bgMove 25s linear infinite;
 }
+
 @keyframes bgMove {
   from {
     background-position: 0 0;
@@ -63,7 +64,7 @@
   justify-content: space-between;
 }
 
-/* Personal Info */
+/* Info card */
 .about-info-card {
   flex: 1;
   min-width: 300px;
@@ -78,12 +79,6 @@
   font-weight: 600;
   margin-bottom: 15px;
   color: #1e3a8a;
-}
-
-.about-info-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .about-info-card li {
@@ -118,11 +113,7 @@
   transition: 0.3s;
 }
 
-.tab-buttons button.active {
-  background: #2563eb;
-  color: white;
-}
-
+.tab-buttons button.active,
 .tab-buttons button:hover {
   background: #2563eb;
   color: white;
@@ -140,28 +131,7 @@
   margin-top: 15px;
 }
 
-.tab-content ul {
-  list-style: disc;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-.tab-content li {
-  margin-bottom: 15px;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-tabs,
-  .about-info-card {
-    width: 100%;
-  }
-}
-/* 🌙 Dark Mode Styling */
+/* 🌙 Dark Mode */
 .app.dark-mode .about-section {
   background: radial-gradient(circle at 20% 20%, #0b1120, #010409);
   color: var(--text);
@@ -196,3 +166,72 @@
   color: white;
 }
 
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 100px 6%;
+  }
+
+  .about-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .tab-content {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info-card,
+  .about-tabs {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .about-tabs {
+    padding: 20px;
+  }
+
+  .tab-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab-buttons button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .tab-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-header p {
+    font-size: 0.9rem;
+  }
+
+  .tab-buttons button {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+
+  .about-info-card li {
+    font-size: 0.9rem;
+  }
+}

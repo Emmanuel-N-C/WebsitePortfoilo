@@ -13,7 +13,7 @@ Welcome to the source code of my **personal portfolio website** — a modern, re
 ✅ **Clean & Modern UI** – Inspired by professional portfolio layouts  
 ✅ **Reusable Components** – Structured React components for scalability  
 ✅ **Scroll-to-Top Button** – Quick access back to the top of the page  
-✅ **Downloadable Resume** – Instant access to my professional CV  
+
 
 ---
 
@@ -42,13 +42,12 @@ Welcome to the source code of my **personal portfolio website** — a modern, re
 - Redux Toolkit  
 
 **Deployment:**  
-- GitHub Pages / Netlify / Vercel (planned)  
+-  Vercel   
 
 ---
 
 ## 💡 Future Improvements
 
-- 🌙 Dark / Light Mode Toggle  
 - 🧬 Background Animation (Matrix Effect)  
 - 🧩 Improved accessibility & SEO  
 - 📝 Integrated blog or portfolio updates section  

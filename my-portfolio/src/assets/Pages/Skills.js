@@ -21,7 +21,7 @@ import {
   SiCypress,
   SiDocker,
   SiAwsamplify,
-
+  SiPostgresql,
   SiBootstrap,
   SiHtml5,
   SiCss3,
@@ -61,6 +61,7 @@ function Skills() {
       skills: [
         { name: "MySQL", level: 90, icon: <SiMysql /> },
         { name: "MongoDB", level: 80, icon: <SiMongodb /> },
+        { name: "PostgreSQL", level: 80, icon: <SiPostgresql /> },
       ],
     },
     {
@@ -71,6 +72,7 @@ function Skills() {
         { name: "Selenium", level: 90, icon: <SiSelenium /> },
         { name: "Postman", level: 85, icon: <SiPostman /> },
         { name: "Cypress", level: 80, icon: <SiCypress /> },
+        { name: "Playwright", level: 90},
       ],
     },
     {

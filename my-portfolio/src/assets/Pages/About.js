@@ -107,7 +107,7 @@ function About() {
                 <br />
                 Led end-to-end QA for diverse client applications, 
                 including e-commerce, finance, and mobile platforms. 
-                My role combined manual, automated, exploratory, and automated testing under tight deadlines, 
+                My role combined manual, exploratory, and automated testing under tight deadlines, 
                 ensuring high-quality deliverables across multiple environments.
               </li>
               <li>
@@ -117,7 +117,7 @@ function About() {
                 <br />
                 Contributed to the verification and validation of web and mobile applications across various industries, 
                 ensuring quality, reliability, and usability before release. 
-                My role involved manual, exploratory, and automated testing to detect defects early and deliver actionable insights to developers.
+                
               </li>
             </ul>
 
@@ -137,8 +137,7 @@ function About() {
                 <br />
                 <em>Remote | Ongoing</em>
                 <br />
-                Build and maintain responsive websites and web apps using React,
-                HTML, CSS, and JavaScript. Focused on clean UI design, performance
+                Build and maintain responsive websites and web apps. Focused on clean UI design, performance
                 optimization, and accessibility.
               </li>
             </ul>

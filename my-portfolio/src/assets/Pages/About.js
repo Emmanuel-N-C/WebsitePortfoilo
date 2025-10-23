@@ -105,7 +105,7 @@ function About() {
                 <br />
                 <em>Budapest, Hungary | 2023 – 2025</em>
                 <br />
-                During my time at DSS Consulting, I led end-to-end QA for diverse client applications, 
+                Led end-to-end QA for diverse client applications, 
                 including e-commerce, finance, and mobile platforms. 
                 My role combined manual, automated, exploratory, and automated testing under tight deadlines, 
                 ensuring high-quality deliverables across multiple environments.
@@ -115,8 +115,7 @@ function About() {
                 <br />
                 <em>Budapest, Hungary | 2022 – 2023</em>
                 <br />
-                During my internship, 
-                I contributed to the verification and validation of web and mobile applications across various industries, 
+                Contributed to the verification and validation of web and mobile applications across various industries, 
                 ensuring quality, reliability, and usability before release. 
                 My role involved manual, exploratory, and automated testing to detect defects early and deliver actionable insights to developers.
               </li>

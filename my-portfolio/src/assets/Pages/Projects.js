@@ -5,7 +5,7 @@ import "./Projects.css";
 
 //  import screenshots
 import lmsImage from "../../assets/images/lmsHomepage.png";
-import redditverseImage from "../../assets/images/Redditverse.png";
+import redditverseImage from "../../assets/images/RedditVersee.png";
 import trackstackImage from "../../assets/images/trackstack.png";
 import flightImage from "../../assets/images/Flightbooking.png";
 import eteeImage from "../../assets/images/EteElementsautomation.png";

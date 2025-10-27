@@ -1,0 +1,147 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "home": {
+    "intro": "Bonjour, je suis",
+    "name": "Nwanganga Emmanuel",
+    "titles": {
+      "fullstack": "Ingénieur Logiciel Full-Stack",
+      "tester": "Ingénieur Test Logiciel",
+      "automation": "Spécialiste Automatisation",
+      "cicd": "Intégrateur CI/CD"
+    },
+    "description": "Je suis un Ingénieur Logiciel Full-Stack et un Ingénieur Test Logiciel certifié ISTQB passionné par la création d'applications web réactives et performantes et l'assurance de la qualité logicielle de bout en bout. Compétent en Java, JavaScript, React et bases de données modernes, je développe des solutions évolutives soutenues par un code propre et testable.\n\nTransformer les idées en solutions élégantes et performantes avec un fort accent sur l'évolutivité, la qualité et l'expérience utilisateur.",
+    "buttons": {
+      "viewProjects": "Voir les Projets",
+      "getInTouch": "Entrer en Contact"
+    }
+  },
+  "about": {
+    "title": "Apprenez à Me Connaître Mieux",
+    "subtitle": "Un ingénieur logiciel passionné avec un focus sur le développement et les tests axés sur la qualité.",
+    "personalInfo": {
+      "title": "Informations Personnelles",
+      "name": "Nom :",
+      "basedIn": "Basé à :",
+      "languages": "Langues :",
+      "location": "Localisation :",
+      "english": "Anglais (Courant)",
+      "german": "Allemand (Intermédiaire)",
+      "switzerland": "Suisse 🇨🇭"
+    },
+    "tabs": {
+      "background": "Contexte",
+      "education": "Formation",
+      "experience": "Expérience"
+    },
+    "background": {
+      "text1": "Je suis un Ingénieur Logiciel Full-Stack et Ingénieur Test Logiciel passionné par la création d'applications web réactives et performantes et l'assurance de la qualité logicielle de bout en bout. Compétent en Java, JavaScript, React et bases de données modernes, je développe des solutions évolutives soutenues par un code propre et testable.",
+      "text2": "En tant que testeur certifié ISTQB, je me spécialise également dans les tests automatisés, l'intégration CI/CD et l'assurance qualité continue dans les pipelines de développement.",
+      "text3": "Je suis passionné par la livraison de logiciels de haute qualité et maintenables en combinant les pratiques de développement et d'automatisation des tests. Expérimenté en Automatisation des Tests, je m'assure que chaque fonctionnalité que je construis ou teste est robuste, efficace et prête pour la production."
+    },
+    "education": {
+      "title": "Formation",
+      "degree": "BSc en Ingénierie Informatique (Technologie Logicielle)",
+      "university": "Université de Dunaújváros, Hongrie —",
+      "gpa": "Diplômé avec une moyenne de 4,79 / 5,0",
+      "certifications": "Certifications Techniques",
+      "istqb": "Testeur Certifié ISTQB Niveau Fondation (CTFL)",
+      "istqbOrg": "Conseil International des Qualifications en Test Logiciel",
+      "bootcamp": "Bootcamp Test Logiciel",
+      "bootcampDesc": "Axé sur les méthodologies QA, frameworks d'automatisation et gestion des tests utilisant Jira, Selenium et TestNG",
+      "aspnet": "Développement ASP.NET Core et Entity Framework",
+      "aspnetDesc": "Formation complète en développement backend avec C#, .NET Core et intégration de base de données",
+      "cloud": "Certification Fondations Cloud",
+      "cloudDesc": "Introduction à l'architecture cloud, services et principes de déploiement (fondamentaux AWS / Azure)",
+      "java": "Certification Développeur Java Spring Boot",
+      "javaDesc": "Concepts avancés en Java, APIs RESTful, Spring Boot et développement d'applications full-stack"
+    },
+    "experience": {
+      "testing": "Expérience en Test Logiciel",
+      "dss": "Ingénieur Test Logiciel — DSS Consulting",
+      "dssLocation": "Budapest, Hongrie | 2023 – 2025",
+      "dssDesc": "Dirigé l'AQ de bout en bout pour diverses applications client, y compris e-commerce, finance et plateformes mobiles. Mon rôle combinait tests manuels, exploratoires et automatisés sous des délais serrés, assurant des livrables de haute qualité dans plusieurs environnements.",
+      "proofit": "Testeur Fonctionnel (Stagiaire) — ProofIT",
+      "proofitLocation": "Budapest, Hongrie | 2022 – 2023",
+      "proofitDesc": "Contribué à la vérification et validation d'applications web et mobiles dans diverses industries, assurant qualité, fiabilité et utilisabilité avant la mise en production.",
+      "engineering": "Expérience en Ingénierie Logicielle",
+      "africsmart": "Ingénieur Logiciel Full-Stack — Africsmart International Ltd",
+      "africsmartLocation": "À distance | 2021 – 2022",
+      "africsmartDesc": "Conçu et développé des applications web évolutives utilisant Java, Spring Boot et React. Implémenté des APIs REST, authentification et interfaces réactives pour améliorer l'efficacité des processus métier.",
+      "freelance": "Développeur Web Front-End (Freelance)",
+      "freelanceLocation": "À distance | En cours",
+      "freelanceDesc": "Construire et maintenir des sites web et applications web réactives. Axé sur la conception UI propre, l'optimisation des performances et l'accessibilité."
+    }
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Une vitrine de certains de mes travaux d'ingénierie et de test logiciel.",
+    "softwareEngineering": "Projets d'Ingénierie Logicielle",
+    "softwareTesting": "Projets de Test Logiciel",
+    "viewOnGithub": "Voir sur GitHub",
+    "softwareProjects": {
+      "lms": {
+        "title": "Système de Gestion des Congés",
+        "description": "Une application web full-stack construite avec ASP.NET Core et Entity Framework pour gérer les demandes de congés des employés, approbations et allocations."
+      },
+      "redditverse": {
+        "title": "RedditVerse",
+        "description": "Une application web sociale inspirée de Reddit, permettant aux utilisateurs de créer des posts, commenter et voter pour/contre le contenu. Axé sur la logique backend et l'interface propre."
+      },
+      "trackstack": {
+        "title": "Track Stack",
+        "description": "Une application de suivi de productivité orientée développeur intégrant la gestion des tâches et le suivi de progression des compétences, supportant les APIs RESTful et le stockage de données persistant."
+      }
+    },
+    "testingProjects": {
+      "flight": {
+        "title": "Automatisation Réservation Vol",
+        "description": "Suite de tests automatisés de bout en bout utilisant Selenium et TestNG pour une application web de réservation de vol, vérifiant les workflows de recherche, réservation et confirmation."
+      },
+      "etee": {
+        "title": "Automatisation Éléments ETEE",
+        "description": "Framework de test de régression UI automatisé pour vérifier les interactions de formulaire et la visibilité des éléments à travers les pages utilisant Selenium et TestNG."
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences et Technologies",
+    "subtitle": "Technologies et outils avec lesquels je travaille"
+  },
+   "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Discutons de votre prochain projet ou disons simplement bonjour !",
+    "leftSide": {
+      "title": "Connectons-nous",
+      "description": "Je suis ouvert aux opportunités de développement logiciel, de tests ou de freelance. N'hésitez pas à me contacter ou à vous connecter via l'une des plateformes ci-dessous."
+    },
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message"
+    }
+  },
+  "footer": {
+    "description": "Ingénieur Logiciel Full-Stack et Ingénieur Test Logiciel spécialisé dans la création d'applications web évolutives et performantes et l'assurance de la qualité logicielle par des tests automatisés et les meilleures pratiques CI/CD.",
+    "location": "Berne, Suisse",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "servicesItems": {
+      "webDev": "Développement Web",
+      "apiDev": "Développement API",
+      "dbDesign": "Conception Base de Données",
+      "testing": "Tests Logiciels",
+      "automation": "Automatisation Tests",
+      "cicd": "Intégration CI/CD"
+    },
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  }
+}

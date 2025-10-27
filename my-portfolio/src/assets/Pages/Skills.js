@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   FaJava,
   FaReact,
@@ -29,6 +30,8 @@ import {
 import "./Skills.css";
 
 function Skills() {
+  const { t } = useTranslation();
+
   const categories = [
     {
       title: "Backend Development",
@@ -127,10 +130,8 @@ function Skills() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1>Skills & Technologies</h1>
-        <p className="subtitle">
-          A comprehensive overview of my technical skills and proficiencies.
-        </p>
+        <h1>{t('skills.title')}</h1>
+        <p className="subtitle">{t('skills.subtitle')}</p>
 
         <div className="skills-grid">
           {categories.map((cat, i) => (

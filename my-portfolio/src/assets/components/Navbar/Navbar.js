@@ -1,12 +1,15 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from 'react-i18next';
 import { toggleTheme } from "../../redux/themeSlice";
 import { FaMoon, FaSun } from "react-icons/fa";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import "./Navbar.css";
 
 function Navbar({ onScrollToSection, activeSection }) {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => state.theme);
+  const { t } = useTranslation();
 
   return (
     <nav className={`navbar ${darkMode ? "dark" : "light"}`}>
@@ -33,7 +36,7 @@ function Navbar({ onScrollToSection, activeSection }) {
                 onScrollToSection.home();
               }}
             >
-              Home
+              {t('navbar.home')}
             </a>
           </li>
           <li>
@@ -45,7 +48,7 @@ function Navbar({ onScrollToSection, activeSection }) {
                 onScrollToSection.about();
               }}
             >
-              About
+              {t('navbar.about')}
             </a>
           </li>
           <li>
@@ -57,7 +60,7 @@ function Navbar({ onScrollToSection, activeSection }) {
                 onScrollToSection.projects();
               }}
             >
-              Projects
+              {t('navbar.projects')}
             </a>
           </li>
           <li>
@@ -69,7 +72,7 @@ function Navbar({ onScrollToSection, activeSection }) {
                 onScrollToSection.skills();
               }}
             >
-              Skills
+              {t('navbar.skills')}
             </a>
           </li>
           <li>
@@ -81,14 +84,14 @@ function Navbar({ onScrollToSection, activeSection }) {
                 onScrollToSection.contact();
               }}
             >
-              Contact
+              {t('navbar.contact')}
             </a>
           </li>
         </ul>
 
         <div className="navbar-actions">
+          <LanguageSwitcher />
           
-
           <button
             className="theme-toggle"
             onClick={() => dispatch(toggleTheme())}

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Navbar from "./assets/components/Navbar/Navbar";
 import Footer from "./assets/components/Footer/Footer";
 import Home from "./assets/Pages/Home";
@@ -8,12 +8,25 @@ import Projects from "./assets/Pages/Projects";
 import Skills from "./assets/Pages/Skills";
 import Contact from "./assets/Pages/Contact";
 import ScrollToTopButton from "./assets/components/ScrollToTopButton/ScrollToTopButton";
+import { initializeLanguage } from "./assets/redux/languageSlice";
+import i18n from "./i18n";
 import "./assets/styles/App.css";
 
 function App() {
+  const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => state.theme);
+  const { currentLanguage } = useSelector((state) => state.language);
 
-  // Section refs
+  useEffect(() => {
+    dispatch(initializeLanguage());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (currentLanguage && i18n.language !== currentLanguage) {
+      i18n.changeLanguage(currentLanguage);
+    }
+  }, [currentLanguage]);
+
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -26,7 +39,6 @@ function App() {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  // 🧠 Track visible section using Intersection Observer
   useEffect(() => {
     const sections = [
       { id: "home", ref: homeRef },
@@ -36,11 +48,7 @@ function App() {
       { id: "contact", ref: contactRef },
     ];
 
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.4,
-    };
+    const observerOptions = { root: null, rootMargin: "0px", threshold: 0.4 };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Contact.css";
 
 function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,10 +50,8 @@ function Contact() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1>Contact Me</h1>
-        <p className="subtitle">
-          Have a question, collaboration idea, or opportunity? Let’s connect.
-        </p>
+        <h1>{t('contact.title')}</h1>
+        <p className="subtitle">{t('contact.subtitle')}</p>
 
         <div className="contact-grid">
           {/* LEFT SIDE */}
@@ -61,11 +61,8 @@ function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Let's Connect</h3>
-            <p>
-              I’m open to software development, testing, or freelance opportunities.
-              Feel free to reach out or connect via any of the platforms below.
-            </p>
+            <h3>{t('contact.leftSide.title')}</h3>
+            <p>{t('contact.leftSide.description')}</p>
             <div className="contact-icons">
               <a
                 href="mailto:nwangangaemmanuel2@gmail.com"
@@ -75,7 +72,7 @@ function Contact() {
                 <FaEnvelope />
               </a>
               <a
-                href="https://www.linkedin.com/in/nwanganga-emmanuel"
+                href="https://www.linkedin.com/in/emmanuel-nwanganga-4940ab2a5"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -103,7 +100,7 @@ function Contact() {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder={t('contact.form.name')}
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -113,7 +110,7 @@ function Contact() {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder={t('contact.form.email')}
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -123,7 +120,7 @@ function Contact() {
               <input
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder={t('contact.form.subject')}
                 value={formData.subject}
                 onChange={handleChange}
                 required
@@ -132,7 +129,7 @@ function Contact() {
             <div className="form-group">
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder={t('contact.form.message')}
                 rows="6"
                 value={formData.message}
                 onChange={handleChange}
@@ -140,7 +137,7 @@ function Contact() {
               ></textarea>
             </div>
             <button type="submit" className="send-btn">
-              {status === "sending" ? "Sending..." : "Send Message"}
+              {status === "sending" ? "Sending..." : t('contact.form.send')}
             </button>
 
             {status === "success" && (

@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Home.css";
 import profilePic from "../../assets/images/myPhoto.jpeg"; 
 
 function Home({ onScrollToSection }) {
+  const { t } = useTranslation();
+  
   const titles = [
-    "Full-Stack Software Engineer",
-    "Software Test Engineer",
-    "Automation Specialist",
-    "CI/CD Integrator",
+    t('home.titles.fullstack'),
+    t('home.titles.tester'),
+    t('home.titles.automation'),
+    t('home.titles.cicd'),
   ];
   const [currentTitle, setCurrentTitle] = useState(0);
 
@@ -30,19 +33,12 @@ function Home({ onScrollToSection }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="intro">Hello, I’m</p>
-          <h1 className="name">Nwanganga Emmanuel</h1>
+          <p className="intro">{t('home.intro')}</p>
+          <h1 className="name">{t('home.name')}</h1>
           <h2 className="animated-role">{titles[currentTitle]}</h2>
 
           <p className="description">
-
-              I’m a Full-Stack Software Engineer and an ISTQB certified Software Test Engineer
-              passionate about building responsive, high-performance web
-              applications and ensuring end-to-end software quality. Proficient in
-              Java, JavaScript, React, and modern databases, I develop scalable
-              solutions backed by clean, testable code.<br /><br />
-              Transforming ideas into elegant, high-performing solutions with a
-              strong focus on scalability, quality, and user experience.
+            {t('home.description')}
           </p>
 
           {/* Buttons */}
@@ -51,13 +47,13 @@ function Home({ onScrollToSection }) {
               className="btn-primary"
               onClick={() => onScrollToSection.projects()}
             >
-              View Projects
+              {t('home.buttons.viewProjects')}
             </button>
             <button
               className="btn-outline"
               onClick={() => onScrollToSection.contact()}
             >
-              Get in Touch
+              {t('home.buttons.getInTouch')}
             </button>
           </div>
 

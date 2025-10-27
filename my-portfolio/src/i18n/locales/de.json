@@ -1,0 +1,147 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "intro": "Hallo, ich bin",
+    "name": "Nwanganga Emmanuel",
+    "titles": {
+      "fullstack": "Full-Stack Softwareentwickler",
+      "tester": "Software-Test-Ingenieur",
+      "automation": "Automatisierungsspezialist",
+      "cicd": "CI/CD-Integrator"
+    },
+    "description": "Ich bin ein Full-Stack Softwareentwickler und ein ISTQB-zertifizierter Software-Test-Ingenieur, der sich leidenschaftlich für die Entwicklung responsiver, leistungsstarker Webanwendungen und die Sicherstellung der End-to-End-Softwarequalität einsetzt. Kompetent in Java, JavaScript, React und modernen Datenbanken entwickle ich skalierbare Lösungen, die durch sauberen, testbaren Code unterstützt werden.\n\nTransformation von Ideen in elegante, leistungsstarke Lösungen mit starkem Fokus auf Skalierbarkeit, Qualität und Benutzererfahrung.",
+    "buttons": {
+      "viewProjects": "Projekte Ansehen",
+      "getInTouch": "Kontakt Aufnehmen"
+    }
+  },
+  "about": {
+    "title": "Lernen Sie Mich Besser Kennen",
+    "subtitle": "Ein leidenschaftlicher Softwareentwickler mit Fokus auf qualitätsgetriebene Entwicklung und Tests.",
+    "personalInfo": {
+      "title": "Persönliche Informationen",
+      "name": "Name:",
+      "basedIn": "Wohnhaft in:",
+      "languages": "Sprachen:",
+      "location": "Standort:",
+      "english": "Englisch (Fließend)",
+      "german": "Deutsch (Mittelstufe)",
+      "switzerland": "Schweiz 🇨🇭"
+    },
+    "tabs": {
+      "background": "Hintergrund",
+      "education": "Bildung",
+      "experience": "Erfahrung"
+    },
+    "background": {
+      "text1": "Ich bin ein Full-Stack Softwareentwickler und Software-Test-Ingenieur, der sich leidenschaftlich für die Entwicklung responsiver, leistungsstarker Webanwendungen und die Sicherstellung der End-to-End-Softwarequalität einsetzt. Kompetent in Java, JavaScript, React und modernen Datenbanken entwickle ich skalierbare Lösungen, die durch sauberen, testbaren Code unterstützt werden.",
+      "text2": "Als ISTQB-zertifizierter Tester spezialisiere ich mich auch auf automatisierte Tests, CI/CD-Integration und kontinuierliche Qualitätssicherung in Entwicklungs-Pipelines.",
+      "text3": "Ich bin leidenschaftlich daran interessiert, hochwertige, wartbare Software zu liefern, indem ich Entwicklungs- und Testautomatisierungspraktiken kombiniere. Erfahren in der Testautomatisierung stelle ich sicher, dass jede Funktion, die ich entwickle oder teste, robust, effizient und produktionsbereit ist."
+    },
+    "education": {
+      "title": "Bildung",
+      "degree": "BSc in Informatik-Ingenieurwesen (Softwaretechnologie)",
+      "university": "Universität Dunaújváros, Ungarn —",
+      "gpa": "Abschluss mit einem Notendurchschnitt von 4,79 / 5,0",
+      "certifications": "Technische Zertifizierungen",
+      "istqb": "ISTQB-zertifizierter Tester Foundation Level (CTFL)",
+      "istqbOrg": "International Software Testing Qualifications Board",
+      "bootcamp": "Software-Testing-Bootcamp",
+      "bootcampDesc": "Fokus auf QA-Methodologien, Automatisierungs-Frameworks und Testmanagement mit Jira, Selenium und TestNG",
+      "aspnet": "ASP.NET Core und Entity Framework Entwicklung",
+      "aspnetDesc": "Umfassende Schulung in Backend-Entwicklung mit C#, .NET Core und Datenbankintegration",
+      "cloud": "Cloud Foundations Zertifizierung",
+      "cloudDesc": "Einführung in Cloud-Architektur, Services und Deployment-Prinzipien (AWS / Azure Grundlagen)",
+      "java": "Java Spring Boot Entwickler Zertifizierung",
+      "javaDesc": "Erweiterte Konzepte in Java, RESTful APIs, Spring Boot und Full-Stack-Anwendungsentwicklung"
+    },
+    "experience": {
+      "testing": "Software-Test-Erfahrung",
+      "dss": "Software-Test-Ingenieur — DSS Consulting",
+      "dssLocation": "Budapest, Ungarn | 2023 – 2025",
+      "dssDesc": "Leitete End-to-End-QA für verschiedene Client-Anwendungen, einschließlich E-Commerce, Finanzen und Mobile-Plattformen. Meine Rolle kombinierte manuelle, explorative und automatisierte Tests unter engen Terminen und stellte hochwertige Lieferungen in mehreren Umgebungen sicher.",
+      "proofit": "Funktionstester (Praktikant) — ProofIT",
+      "proofitLocation": "Budapest, Ungarn | 2022 – 2023",
+      "proofitDesc": "Trug zur Verifikation und Validierung von Web- und Mobile-Anwendungen in verschiedenen Branchen bei und stellte Qualität, Zuverlässigkeit und Benutzerfreundlichkeit vor der Veröffentlichung sicher.",
+      "engineering": "Software-Entwicklungs-Erfahrung",
+      "africsmart": "Full-Stack Softwareentwickler — Africsmart International Ltd",
+      "africsmartLocation": "Remote | 2021 – 2022",
+      "africsmartDesc": "Entwarf und entwickelte skalierbare Webanwendungen mit Java, Spring Boot und React. Implementierte REST APIs, Authentifizierung und responsive UIs zur Verbesserung der Geschäftsprozesseffizienz.",
+      "freelance": "Front-End Webentwickler (Freelance)",
+      "freelanceLocation": "Remote | Laufend",
+      "freelanceDesc": "Entwickle und warte responsive Websites und Web-Apps. Fokus auf sauberes UI-Design, Leistungsoptimierung und Barrierefreiheit."
+    }
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Eine Auswahl meiner Softwareentwicklungs- und Testarbeiten.",
+    "softwareEngineering": "Softwareentwicklungs-Projekte",
+    "softwareTesting": "Software-Test-Projekte",
+    "viewOnGithub": "Auf GitHub Ansehen",
+    "softwareProjects": {
+      "lms": {
+        "title": "Urlaubsverwaltungssystem",
+        "description": "Eine Full-Stack-Webanwendung mit ASP.NET Core und Entity Framework zur Verwaltung von Mitarbeiterurlaubsanträgen, Genehmigungen und Zuteilungen."
+      },
+      "redditverse": {
+        "title": "RedditVerse",
+        "description": "Eine soziale Webanwendung inspiriert von Reddit, die es Benutzern ermöglicht, Posts zu erstellen, zu kommentieren und Inhalte zu bewerten. Fokus auf Backend-Logik und sauberes UI."
+      },
+      "trackstack": {
+        "title": "Track Stack",
+        "description": "Eine entwicklerorientierte Produktivitäts-Tracker-App, die Aufgabenmanagement und Fähigkeitsfortschrittsverfolgung integriert und RESTful APIs und persistente Datenspeicherung unterstützt."
+      }
+    },
+    "testingProjects": {
+      "flight": {
+        "title": "Flugbuchungs-Automatisierung",
+        "description": "End-to-End automatisierte Testsuite mit Selenium und TestNG für eine Flugbuchungs-Web-App, die Such-, Buchungs- und Bestätigungsworkflows verifiziert."
+      },
+      "etee": {
+        "title": "ETEE Elemente Automatisierung",
+        "description": "Automatisiertes UI-Regressionstest-Framework zur Verifikation von Formularinteraktionen und Elementensichtbarkeit über Seiten hinweg mit Selenium und TestNG."
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten und Technologien",
+    "subtitle": "Technologien und Tools, mit denen ich arbeite"
+  },
+   "contact": {
+    "title": "Kontakt Aufnehmen",
+    "subtitle": "Lassen Sie uns über Ihr nächstes Projekt sprechen oder einfach Hallo sagen!",
+    "leftSide": {
+      "title": "Lass uns Verbinden",
+      "description": "Ich bin offen für Softwareentwicklung, Test- oder Freelance-Möglichkeiten. Zögern Sie nicht, mich zu kontaktieren oder über eine der untenstehenden Plattformen zu verbinden."
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht Senden"
+    }
+  },
+  "footer": {
+    "description": "Full-Stack Softwareentwickler und Software-Test-Ingenieur spezialisiert auf die Entwicklung skalierbarer, leistungsstarker Webanwendungen und die Sicherstellung der Softwarequalität durch automatisierte Tests und CI/CD-Best-Practices.",
+    "location": "Bern, Schweiz",
+    "quickLinks": "Schnelllinks",
+    "services": "Dienstleistungen",
+    "servicesItems": {
+      "webDev": "Webentwicklung",
+      "apiDev": "API-Entwicklung",
+      "dbDesign": "Datenbankdesign",
+      "testing": "Software-Tests",
+      "automation": "Testautomatisierung",
+      "cicd": "CI/CD-Integration"
+    },
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

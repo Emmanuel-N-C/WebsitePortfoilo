@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { FaGlobe, FaMapMarkerAlt } from "react-icons/fa";
 import "./About.css";
 
 function About() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("background");
 
   const renderContent = () => {
@@ -16,24 +18,9 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p>
-              I’m a Full-Stack Software Engineer and Software Test Engineer
-              passionate about building responsive, high-performance web
-              applications and ensuring end-to-end software quality. Proficient in
-              Java, JavaScript, React, and modern databases, I develop scalable
-              solutions backed by clean, testable code.
-            </p>
-            <p>
-              As an ISTQB-certified tester, I also specialize in automated testing,
-              CI/CD integration, and continuous quality assurance across
-              development pipelines.
-            </p>
-            <p>
-              I’m passionate about delivering high-quality, maintainable software by
-              combining development and test automation practices. Experienced in
-              Test Automation, I ensure that every feature I build or test is robust,
-              efficient, and production-ready.
-            </p>
+            <p>{t('about.background.text1')}</p>
+            <p>{t('about.background.text2')}</p>
+            <p>{t('about.background.text3')}</p>
           </motion.div>
         );
 
@@ -45,46 +32,42 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3>Education</h3>
+            <h3>{t('about.education.title')}</h3>
             <ul>
               <li>
-                <strong>BSc in Computer Science Engineering (Software Technology)</strong>
+                <strong>{t('about.education.degree')}</strong>
                 <br />
-                University of Dunaújváros, Hungary —{" "}
-                <em>Graduated with a GPA of 4.79 / 5.0</em>
+                {t('about.education.university')}{" "}
+                <em>{t('about.education.gpa')}</em>
               </li>
             </ul>
 
-            <h3>Technical Certifications</h3>
+            <h3>{t('about.education.certifications')}</h3>
             <ul>
               <li>
-                <strong>ISTQB Certified Tester Foundation Level (CTFL)</strong>
+                <strong>{t('about.education.istqb')}</strong>
                 <br />
-                International Software Testing Qualifications Board
+                {t('about.education.istqbOrg')}
               </li>
               <li>
-                <strong>Software Testing Bootcamp</strong>
+                <strong>{t('about.education.bootcamp')}</strong>
                 <br />
-                Focused on QA methodologies, automation frameworks, and test
-                management using Jira, Selenium, and TestNG
+                {t('about.education.bootcampDesc')}
               </li>
               <li>
-                <strong>ASP.NET Core and Entity Framework Development</strong>
+                <strong>{t('about.education.aspnet')}</strong>
                 <br />
-                Comprehensive training in backend development with C#, .NET Core,
-                and database integration
+                {t('about.education.aspnetDesc')}
               </li>
               <li>
-                <strong>Cloud Foundations Certification</strong>
+                <strong>{t('about.education.cloud')}</strong>
                 <br />
-                Introduction to cloud architecture, services, and deployment
-                principles (AWS / Azure fundamentals)
+                {t('about.education.cloudDesc')}
               </li>
               <li>
-                <strong>Java Spring Boot Developer Certification</strong>
+                <strong>{t('about.education.java')}</strong>
                 <br />
-                Advanced concepts in Java, RESTful APIs, Spring Boot, and full-stack
-                application development
+                {t('about.education.javaDesc')}
               </li>
             </ul>
           </motion.div>
@@ -98,50 +81,41 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-                        <h4>Software Testing Experience</h4>
+            <h4>{t('about.experience.testing')}</h4>
             <ul>
               <li>
-                <strong>Software Test Engineer — DSS Consulting</strong>
+                <strong>{t('about.experience.dss')}</strong>
                 <br />
-                <em>Budapest, Hungary | 2023 – 2025</em>
+                <em>{t('about.experience.dssLocation')}</em>
                 <br />
-                Led end-to-end QA for diverse client applications, 
-                including e-commerce, finance, and mobile platforms. 
-                My role combined manual, exploratory, and automated testing under tight deadlines, 
-                ensuring high-quality deliverables across multiple environments.
+                {t('about.experience.dssDesc')}
               </li>
               <li>
-                <strong>Functional Tester (Intern) — ProofIT</strong>
+                <strong>{t('about.experience.proofit')}</strong>
                 <br />
-                <em>Budapest, Hungary | 2022 – 2023</em>
+                <em>{t('about.experience.proofitLocation')}</em>
                 <br />
-                Contributed to the verification and validation of web and mobile applications across various industries, 
-                ensuring quality, reliability, and usability before release. 
-                
+                {t('about.experience.proofitDesc')}
               </li>
             </ul>
 
-            <h4>Software Engineering Experience</h4>
+            <h4>{t('about.experience.engineering')}</h4>
             <ul>
               <li>
-                <strong>Full-Stack Software Engineer — Africsmart International Ltd</strong>
+                <strong>{t('about.experience.africsmart')}</strong>
                 <br />
-                <em>Remote | 2021 – 2022</em>
+                <em>{t('about.experience.africsmartLocation')}</em>
                 <br />
-                Designed and developed scalable web applications using Java,
-                Spring Boot, and React. Implemented REST APIs, authentication, and
-                responsive UIs to improve business process efficiency.
+                {t('about.experience.africsmartDesc')}
               </li>
               <li>
-                <strong>Front-End Web Developer (Freelance)</strong>
+                <strong>{t('about.experience.freelance')}</strong>
                 <br />
-                <em>Remote | Ongoing</em>
+                <em>{t('about.experience.freelanceLocation')}</em>
                 <br />
-                Build and maintain responsive websites and web apps. Focused on clean UI design, performance
-                optimization, and accessibility.
+                {t('about.experience.freelanceDesc')}
               </li>
             </ul>
-
           </motion.div>
         );
 
@@ -159,11 +133,8 @@ function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Get to Know Me Better</h2>
-          <p>
-            A passionate software engineer with a focus on quality-driven
-            development and testing.
-          </p>
+          <h2>{t('about.title')}</h2>
+          <p>{t('about.subtitle')}</p>
         </motion.div>
 
         <div className="about-content">
@@ -174,25 +145,25 @@ function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Personal Info</h3>
+            <h3>{t('about.personalInfo.title')}</h3>
             <ul>
               <li>
-                <strong>Name:</strong> Nwanganga Emmanuel
+                <strong>{t('about.personalInfo.name')}</strong> Nwanganga Emmanuel
               </li>
               <li>
-                <strong>Based in:</strong> Bern, Switzerland
+                <strong>{t('about.personalInfo.basedIn')}</strong> Bern, {t('about.personalInfo.switzerland')}
               </li>
               <li>
-                <strong>Languages:</strong>
+                <strong>{t('about.personalInfo.languages')}</strong>
                 <br />
-                <FaGlobe /> English (Fluent)
+                <FaGlobe /> {t('about.personalInfo.english')}
                 <br />
-                <FaGlobe /> German (Intermediate)
+                <FaGlobe /> {t('about.personalInfo.german')}
               </li>
               <li>
-                <strong>Location:</strong>
+                <strong>{t('about.personalInfo.location')}</strong>
                 <br />
-                <FaMapMarkerAlt /> Switzerland 🇨🇭
+                <FaMapMarkerAlt /> {t('about.personalInfo.switzerland')}
               </li>
             </ul>
           </motion.div>
@@ -209,19 +180,19 @@ function About() {
                 className={activeTab === "background" ? "active" : ""}
                 onClick={() => setActiveTab("background")}
               >
-                Background
+                {t('about.tabs.background')}
               </button>
               <button
                 className={activeTab === "education" ? "active" : ""}
                 onClick={() => setActiveTab("education")}
               >
-                Education
+                {t('about.tabs.education')}
               </button>
               <button
                 className={activeTab === "experience" ? "active" : ""}
                 onClick={() => setActiveTab("experience")}
               >
-                Experience
+                {t('about.tabs.experience')}
               </button>
             </div>
             <div className="tab-content">{renderContent()}</div>

@@ -1,0 +1,147 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "intro": "Hello, I'm",
+    "name": "Nwanganga Emmanuel",
+    "titles": {
+      "fullstack": "Full-Stack Software Engineer",
+      "tester": "Software Test Engineer",
+      "automation": "Automation Specialist",
+      "cicd": "CI/CD Integrator"
+    },
+    "description": "I'm a Full-Stack Software Engineer and an ISTQB certified Software Test Engineer passionate about building responsive, high-performance web applications and ensuring end-to-end software quality. Proficient in Java, JavaScript, React, and modern databases, I develop scalable solutions backed by clean, testable code.\n\nTransforming ideas into elegant, high-performing solutions with a strong focus on scalability, quality, and user experience.",
+    "buttons": {
+      "viewProjects": "View Projects",
+      "getInTouch": "Get in Touch"
+    }
+  },
+  "about": {
+    "title": "Get to Know Me Better",
+    "subtitle": "A passionate software engineer with a focus on quality-driven development and testing.",
+    "personalInfo": {
+      "title": "Personal Info",
+      "name": "Name:",
+      "basedIn": "Based in:",
+      "languages": "Languages:",
+      "location": "Location:",
+      "english": "English (Fluent)",
+      "german": "German (Intermediate)",
+      "switzerland": "Switzerland 🇨🇭"
+    },
+    "tabs": {
+      "background": "Background",
+      "education": "Education",
+      "experience": "Experience"
+    },
+    "background": {
+      "text1": "I'm a Full-Stack Software Engineer and Software Test Engineer passionate about building responsive, high-performance web applications and ensuring end-to-end software quality. Proficient in Java, JavaScript, React, and modern databases, I develop scalable solutions backed by clean, testable code.",
+      "text2": "As an ISTQB-certified tester, I also specialize in automated testing, CI/CD integration, and continuous quality assurance across development pipelines.",
+      "text3": "I'm passionate about delivering high-quality, maintainable software by combining development and test automation practices. Experienced in Test Automation, I ensure that every feature I build or test is robust, efficient, and production-ready."
+    },
+    "education": {
+      "title": "Education",
+      "degree": "BSc in Computer Science Engineering (Software Technology)",
+      "university": "University of Dunaújváros, Hungary —",
+      "gpa": "Graduated with a GPA of 4.79 / 5.0",
+      "certifications": "Technical Certifications",
+      "istqb": "ISTQB Certified Tester Foundation Level (CTFL)",
+      "istqbOrg": "International Software Testing Qualifications Board",
+      "bootcamp": "Software Testing Bootcamp",
+      "bootcampDesc": "Focused on QA methodologies, automation frameworks, and test management using Jira, Selenium, and TestNG",
+      "aspnet": "ASP.NET Core and Entity Framework Development",
+      "aspnetDesc": "Comprehensive training in backend development with C#, .NET Core, and database integration",
+      "cloud": "Cloud Foundations Certification",
+      "cloudDesc": "Introduction to cloud architecture, services, and deployment principles (AWS / Azure fundamentals)",
+      "java": "Java Spring Boot Developer Certification",
+      "javaDesc": "Advanced concepts in Java, RESTful APIs, Spring Boot, and full-stack application development"
+    },
+    "experience": {
+      "testing": "Software Testing Experience",
+      "dss": "Software Test Engineer — DSS Consulting",
+      "dssLocation": "Budapest, Hungary | 2023 – 2025",
+      "dssDesc": "Led end-to-end QA for diverse client applications, including e-commerce, finance, and mobile platforms. My role combined manual, exploratory, and automated testing under tight deadlines, ensuring high-quality deliverables across multiple environments.",
+      "proofit": "Functional Tester (Intern) — ProofIT",
+      "proofitLocation": "Budapest, Hungary | 2022 – 2023",
+      "proofitDesc": "Contributed to the verification and validation of web and mobile applications across various industries, ensuring quality, reliability, and usability before release.",
+      "engineering": "Software Engineering Experience",
+      "africsmart": "Full-Stack Software Engineer — Africsmart International Ltd",
+      "africsmartLocation": "Remote | 2021 – 2022",
+      "africsmartDesc": "Designed and developed scalable web applications using Java, Spring Boot, and React. Implemented REST APIs, authentication, and responsive UIs to improve business process efficiency.",
+      "freelance": "Front-End Web Developer (Freelance)",
+      "freelanceLocation": "Remote | Ongoing",
+      "freelanceDesc": "Build and maintain responsive websites and web apps. Focused on clean UI design, performance optimization, and accessibility."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of some of my software engineering and testing work.",
+    "softwareEngineering": "Software Engineering Projects",
+    "softwareTesting": "Software Testing Projects",
+    "viewOnGithub": "View on GitHub",
+    "softwareProjects": {
+      "lms": {
+        "title": "Leave Management System",
+        "description": "A full-stack web application built with ASP.NET Core and Entity Framework for managing employee leave requests, approvals, and allocations."
+      },
+      "redditverse": {
+        "title": "RedditVerse",
+        "description": "A social web application inspired by Reddit, enabling users to create posts, comment, and upvote/downvote content. Focused on backend logic and clean UI."
+      },
+      "trackstack": {
+        "title": "Track Stack",
+        "description": "A developer-oriented productivity tracker app integrating task management and skill progression tracking, supporting RESTful APIs and persistent data storage."
+      }
+    },
+    "testingProjects": {
+      "flight": {
+        "title": "Flight Booking Automation",
+        "description": "End-to-end automated test suite using Selenium and TestNG for a flight booking web app, verifying search, booking, and confirmation workflows."
+      },
+      "etee": {
+        "title": "ETEE Elements Automation",
+        "description": "Automated UI regression testing framework for verifying form interactions and elements visibility across pages using Selenium and TestNG."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies and tools I work with"
+  },
+   "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or just say hello!",
+    "leftSide": {
+      "title": "Let's Connect",
+      "description": "I'm open to software development, testing, or freelance opportunities. Feel free to reach out or connect via any of the platforms below."
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Full-Stack Software Engineer & Software Test Engineer specializing in building scalable, high-performance web applications and ensuring software quality through automated testing and CI/CD best practices.",
+    "location": "Bern, Switzerland",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "servicesItems": {
+      "webDev": "Web Development",
+      "apiDev": "API Development",
+      "dbDesign": "Database Design",
+      "testing": "Software Testing",
+      "automation": "Test Automation",
+      "cicd": "CI/CD Integration"
+    },
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
 
 function Footer({ onScrollToSection }) {
+  const { t } = useTranslation();
+
   // Function to scroll to contact section and prefill subject
   const handleServiceClick = (service) => {
     if (onScrollToSection?.contact) {
@@ -19,13 +22,9 @@ function Footer({ onScrollToSection }) {
         {/* LEFT SECTION */}
         <div className="footer-about">
           <h3>Nwanganga Emmanuel</h3>
-          <p>
-            Full-Stack Software Engineer & Software Test Engineer specializing in
-            building scalable, high-performance web applications and ensuring
-            software quality through automated testing and CI/CD best practices.
-          </p>
+          <p>{t('footer.description')}</p>
           <br />
-          <p>Bern, Switzerland</p>
+          <p>{t('footer.location')}</p>
           <div className="footer-socials">
             <a
               href="https://github.com/Emmanuel-N-C"
@@ -49,44 +48,44 @@ function Footer({ onScrollToSection }) {
 
         {/* MIDDLE SECTION - QUICK LINKS */}
         <div className="footer-links">
-          <h4>Quick Links</h4>
+          <h4>{t('footer.quickLinks')}</h4>
           <ul>
-            <li onClick={onScrollToSection?.home}>Home</li>
-            <li onClick={onScrollToSection?.about}>About</li>
-            <li onClick={onScrollToSection?.projects}>Projects</li>
-            <li onClick={onScrollToSection?.skills}>Skills</li>
-            <li onClick={onScrollToSection?.contact}>Contact</li>
+            <li onClick={onScrollToSection?.home}>{t('navbar.home')}</li>
+            <li onClick={onScrollToSection?.about}>{t('navbar.about')}</li>
+            <li onClick={onScrollToSection?.projects}>{t('navbar.projects')}</li>
+            <li onClick={onScrollToSection?.skills}>{t('navbar.skills')}</li>
+            <li onClick={onScrollToSection?.contact}>{t('navbar.contact')}</li>
           </ul>
         </div>
 
         {/* RIGHT SECTION - SERVICES */}
         <div className="footer-services">
-          <h4>Services</h4>
+          <h4>{t('footer.services')}</h4>
           <ul>
             <li onClick={() => handleServiceClick("Web Development")}>
-              Web Development
+              {t('footer.servicesItems.webDev')}
             </li>
             <li onClick={() => handleServiceClick("API Development")}>
-              API Development
+              {t('footer.servicesItems.apiDev')}
             </li>
             <li onClick={() => handleServiceClick("Database Design")}>
-              Database Design
+              {t('footer.servicesItems.dbDesign')}
             </li>
             <li onClick={() => handleServiceClick("Software Testing")}>
-              Software Testing
+              {t('footer.servicesItems.testing')}
             </li>
             <li onClick={() => handleServiceClick("Test Automation")}>
-              Test Automation
+              {t('footer.servicesItems.automation')}
             </li>
             <li onClick={() => handleServiceClick("CI/CD Integration")}>
-              CI/CD Integration
+              {t('footer.servicesItems.cicd')}
             </li>
           </ul>
         </div>
 
         {/* CONTACT SECTION */}
         <div className="footer-contact">
-          <h4>Contact</h4>
+          <h4>{t('footer.contact')}</h4>
           <p>
             <a href="mailto:nwangangachinedu@gmail.com">
               nwangangachinedu@gmail.com
@@ -114,7 +113,7 @@ function Footer({ onScrollToSection }) {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Nwanganga Emmanuel. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Nwanganga Emmanuel. {t('footer.rights')}</p>
       </div>
     </footer>
   );

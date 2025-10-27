@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa";
 import "./Projects.css";
 
@@ -11,27 +12,26 @@ import flightImage from "../../assets/images/Flightbooking.png";
 import eteeImage from "../../assets/images/EteElementsautomation.png";
 
 function Projects() {
+  const { t } = useTranslation();
+
   const softwareProjects = [
     {
-      title: "Leave Management System",
-      description:
-        "A full-stack web application built with ASP.NET Core and Entity Framework for managing employee leave requests, approvals, and allocations.",
+      title: t('projects.softwareProjects.lms.title'),
+      description: t('projects.softwareProjects.lms.description'),
       tech: ["C#", ".NET Core", "Entity Framework", "SQL Server", "Bootstrap"],
       link: "https://github.com/Emmanuel-N-C/LeaveManagementSystem",
       image: lmsImage,
     },
     {
-      title: "RedditVerse",
-      description:
-        "A social web application inspired by Reddit, enabling users to create posts, comment, and upvote/downvote content. Focused on backend logic and clean UI.",
+      title: t('projects.softwareProjects.redditverse.title'),
+      description: t('projects.softwareProjects.redditverse.description'),
       tech: ["Java", "Spring Boot", "React", "MySQL"],
       link: "https://github.com/Emmanuel-N-C/RedditVerse",
       image: redditverseImage,
     },
     {
-      title: "Track Stack",
-      description:
-        "A developer-oriented productivity tracker app integrating task management and skill progression tracking, supporting RESTful APIs and persistent data storage.",
+      title: t('projects.softwareProjects.trackstack.title'),
+      description: t('projects.softwareProjects.trackstack.description'),
       tech: ["React", "Node.js", "Express", "MongoDB"],
       link: "https://github.com/Emmanuel-N-C/TrackStack-React",
       image: trackstackImage,
@@ -40,17 +40,15 @@ function Projects() {
 
   const testingProjects = [
     {
-      title: "Flight Booking Automation",
-      description:
-        "End-to-end automated test suite using Selenium and TestNG for a flight booking web app, verifying search, booking, and confirmation workflows.",
+      title: t('projects.testingProjects.flight.title'),
+      description: t('projects.testingProjects.flight.description'),
       tech: ["Java", "Selenium", "TestNG", "Maven"],
       link: "https://github.com/Emmanuel-N-C/FlightBookingAutomation",
       image: flightImage,
     },
     {
-      title: "ETEE Elements Automation",
-      description:
-        "Automated UI regression testing framework for verifying form interactions and elements visibility across pages using Selenium and TestNG.",
+      title: t('projects.testingProjects.etee.title'),
+      description: t('projects.testingProjects.etee.description'),
       tech: ["Java", "Selenium", "TestNG"],
       link: "https://github.com/Emmanuel-N-C/ETEElementsAutomation",
       image: eteeImage,
@@ -83,7 +81,7 @@ function Projects() {
           rel="noopener noreferrer"
           className="github-link"
         >
-          <FaGithub /> View on GitHub
+          <FaGithub /> {t('projects.viewOnGithub')}
         </a>
       </div>
     </motion.div>
@@ -97,19 +95,17 @@ function Projects() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h1>Featured Projects</h1>
-        <p className="subtitle">
-          A showcase of some of my software engineering and testing work.
-        </p>
+        <h1>{t('projects.title')}</h1>
+        <p className="subtitle">{t('projects.subtitle')}</p>
 
-        <h2>Software Engineering Projects</h2>
+        <h2>{t('projects.softwareEngineering')}</h2>
         <div className="projects-grid">
           {softwareProjects.map((project, index) =>
             renderProjectCard(project, index)
           )}
         </div>
 
-        <h2>Software Testing Projects</h2>
+        <h2>{t('projects.softwareTesting')}</h2>
         <div className="projects-grid">
           {testingProjects.map((project, index) =>
             renderProjectCard(project, index)
